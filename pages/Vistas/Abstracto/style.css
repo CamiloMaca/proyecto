@@ -1,0 +1,174 @@
+/* General */
+h1{
+     
+    color: #59009A;
+    font-style: italic;
+  }
+  h2{
+    font-family: roboto sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    background-color: #fffcfc;
+    width: 100%;
+    left: 0%;
+  }
+  
+  .arriba {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+  .logo h1 {
+      margin: 0;
+  }
+  .nav {
+      display: flex;
+      align-items: center;
+  }
+  .nav a {
+      margin-right: 20px;
+      color: #59009A;
+      text-decoration: none;
+      margin-right: 50px;
+  }
+  .nav img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+  }
+  
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  form {
+    position: absolute; /* Posicionar absolutamente el formulario */
+    top: 20px; /* Ajustar la posición superior */
+    right: 20px; /* Ajustar la posición derecha */
+    z-index: 10; /* Asegurar que el formulario esté encima de otros elementos */
+  }
+  
+  input[type="search"] {
+    flex: 1; /* Permitir que el campo de búsqueda ocupe todo el espacio disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Añadir bordes redondeados al campo de búsqueda */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Añadir bordes redondeados al botón */
+    cursor: pointer;
+  }
+  
+  .bloque {
+    width: 235px; /* Ajustar el ancho de los bloques */
+    height: 183px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir una sombra */
+  }
+  
+  .bloque img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Añadir bordes redondeados a las imágenes */
+  }
+  
+  .bloque p {
+    font-size: 16px;
+    margin-bottom: 0; /* Eliminar el margen inferior */
+  }
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+    flex-direction: column;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .imagenes-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagen-footer{
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
+    align-items: center;
+  }
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
+  .center {
+      text-align: center;
+      flex-grow: 1;
+  }
+  .search-container {
+      display: flex;
+      justify-content: flex-end;
+  }
+  .search-container input {
+      padding: 5px;
+      font-size: 16px;
+  }
+  

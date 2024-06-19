@@ -1,0 +1,206 @@
+/* General */
+h1 {
+    color: #59009A;
+    font-style: italic;
+  }
+  
+  h2 {
+    font-family: roboto sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav a {
+    margin-right: 20px;
+    color: #59009A;
+    text-decoration: none;
+  }
+  
+  .nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .sidebar-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  .sidebar .options,
+  .sidebar .icons {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+  }
+  
+  .sidebar .options button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .sidebar .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(40px, auto);
+    grid-gap: 10px;
+  }
+  
+  .sidebar .icons i {
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar .icons i:nth-child(odd) {
+    margin-top: 0; /* Asegura que los iconos en posiciones impares no tengan margen superior adicional */
+  }
+  
+  .sidebar .icons i:nth-child(even) {
+    margin-top: 20px; /* Asegura que los iconos en posiciones pares estén más abajo */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .bloque {
+    width: 309px;
+    height: 182px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bloque img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .bloque p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+    flex-direction: column;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .imagenes-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagen-footer {
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
+    align-items: center;
+  }
+  
