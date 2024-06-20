@@ -80,8 +80,10 @@ body {
 .main-content-wrapper {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 .main-content {
   display:flex;
@@ -96,14 +98,16 @@ body {
 
 .card {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 400px;
   break-inside: avoid;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
- 
+  
+  
 }
 
 .card summary {
@@ -213,14 +217,19 @@ body {
 }
 
 .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
   display: none;
   padding: 10px;
   background: #f1f1f1;
   border-top: 1px solid #ccc;
+  z-index: 2;
 }
 
 details[open] .options {
   display: block;
+  position: absolute; top: 100%; left: 0; z-index: 2;
 }
 
 details[open] .username {
@@ -244,12 +253,14 @@ details[open] .heart .icon {
 .card details[open] .options {
   display: block;
   position: relative;
-  z-index: 2; 
+  z-index: 3;
+  
 }
 .details-container[open] .options {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 
 .card details:not([open]) .options {
@@ -260,7 +271,11 @@ details[open] .heart .icon {
 .card details[open]:not(:hover) .options {
   display: none;
 }
-
+.details-container[open] .options {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .explore-section {
   text-align: center;
   width: 100%;
