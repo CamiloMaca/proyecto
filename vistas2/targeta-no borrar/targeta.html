@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tarjeta Interactiva</title>
+    <style>
+
+        
+        .card {
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .card summary {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .title {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            display: none;
+        }
+        .card:hover .title {
+            display: block;
+        }
+
+        .username {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            font-size: 1em;
+            display: none;
+            text-shadow:0 0 1px black;
+        }
+
+        .card:hover .username {
+            display: block;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+            display: none;
+        }
+        .card:hover .heart {
+            display: block;
+        }
+
+        .heart img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .options {
+            display: none;
+            padding: 10px;
+            background: #f1f1f1;
+            border-top: 1px solid #ccc;
+        }
+        
+        details[open] .options {
+            display: block;
+        }
+
+        details[open] .username {
+            display: none;
+            color: rgb(0, 0, 0);
+        }
+        details[open] .heart {
+            color: black;
+        }
+        details[open] .heart .icon {
+            color: rgb(119, 35, 35);
+        }
+
+        
+
+        .card:hover details[open] .options {
+            display: none;
+        }
+
+        .card:hover details:hover .options {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="card">
+        <details>
+            <summary>
+                <img src="../targeta/image.jpg" alt="Imagen">
+                <div class="title">Título del Contenido</div>
+                <div class="username">Nombre de Usuario</div>
+                <div class="heart">
+                    <i class="material-icons icon">favorite</i>
+                    <span>123</span>
+                    
+                    
+                </div>
+                <img src="../" alt="">
+            </summary>
+            <div class="options">
+                <i class="material-icons icon">share</i>
+                <i class="material-icons icon">download</i>
+                <div class="description">Descripción del contenido que se muestra al hacer clic en la imagen.</div>
+                <br>
+                <br>
+            </div>
+        </details>
+    </div>
+<footer>
+
+
+</footer>
+</body>
+</html>
+
